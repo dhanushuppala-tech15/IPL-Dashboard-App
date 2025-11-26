@@ -1,0 +1,64 @@
+/* Write your CSS here */
+.matchDetailsContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #0f172a;
+  border-radius: 8px;
+  padding: 25px;
+}
+
+.description {
+  color: #ffffff;
+  font-family: 'Bree Serif';
+}
+.teamVenueContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.inningsCont {
+  display: flex;
+  flex-direction: column;
+  text-align: end;
+}
+.competingHeading {
+  color: #ffffff;
+  font-family: 'Bree Serif';
+}
+.logoVenueCont {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+.latestTeamLogo {
+  padding-left: 35px;
+  margin-left: 45px;
+}
+.hrLine {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  .matchDetailsContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #0f172a;
+    border-radius: 8px;
+    padding: 25px;
+  }
+  .latestTeamLogo {
+    height: 100px;
+    width: 100px;
+  }
+  .inningsCont {
+    text-align: start;
+    align-self: flex-start;
+  }
+  .hrLine {
+    display: block;
+    border: 2px solid #475569;
+    width: 100%;
+  }
+}

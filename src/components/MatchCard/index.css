@@ -1,0 +1,35 @@
+/* Write your CSS here */
+.Won {
+  color: #18ed66;
+  font-family: 'Bree Serif';
+}
+.Lost {
+  color: #e31a1a;
+  font-family: 'Bree Serif';
+}
+.match-card {
+  background-color: #0f172a;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-left: 0px;
+  margin: 20px;
+  width: 280px;
+  padding: 25px;
+}
+.team-name {
+  color: #ffffff;
+  font-family: 'Bree Serif';
+  text-align: center;
+}
+.result {
+  color: #ffffff;
+  font-family: 'Bree Serif';
+  text-align: center;
+}
+.team-logo-img {
+  height: 120px;
+  width: 100px;
+}
