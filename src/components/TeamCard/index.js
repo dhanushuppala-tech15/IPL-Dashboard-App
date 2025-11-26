@@ -5,15 +5,18 @@ import './index.css'
 
 const TeamCard = props => {
   const {teamDetails} = props
-  const {name, teamImageUrl, id} = teamDetails
+  const {name, id, teamImageURL} = teamDetails
 
   return (
-    <Link to={`/team-matches/${id}`} className="link-item">
-      <li className="team-card">
-        <img className="team-logo" src={teamImageUrl} alt={`${name}`} />
+    // FIX9: When clicked on TeamCard, page should be navigated to the URL '/team-matches/${id}'
+    // FIX10: "exact" and "path" props are used in Route component to match routes
+    // FIX11: "to" is the prop used to give the URL for navigation to Link component
+    <li className="team-item">
+      <Link to={`/team-matches/${id}`} className="link">
+        <img src={teamImageURL} alt={name} className="team-logo" />
         <p className="team-name">{name}</p>
-      </li>
-    </Link>
+      </Link>
+    </li>
   )
 }
 
